@@ -1,17 +1,23 @@
 
 <div id="header">
-  <span class='big'>{{ site.title }}</span>
-  <span class='small'>{{ site.subtitle }}</span>
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+    <ul id="menu">
+    {% for item in site.nav %}
+      {% if item.href contains 'http' %}
+         <a href="{{ item.href }}"><li>{{ item.title }}</li></a>
+      {% else %}
+         <a href="{{ item.href | relative_url }}"><li>{{ item.title }}</li></a>
+      {% endif %}
+    {% endfor %}
+    </ul>
+    
+      </div>
+    </nav>
+  <span><a href="/"><img id="logo" src="/logo.jpg" alt="Chicago YGL Logo"></a></span>
 </div>
 
-
-<div id="nav">
-{% for item in site.nav %}
-  {% if item.href contains 'http' %}
-     <a href="{{ item.href }}">{{ item.title }}</a>
-  {% else %}
-     <a href="{{ item.href | relative_url }}">{{ item.title }}</a>
-  {% endif %}
-  {% if forloop.last %}  {% else %} • {% endif %}
-{% endfor %}
-</div>
