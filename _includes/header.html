@@ -1,23 +1,16 @@
 
-<div id="header">
-    <nav role="navigation">
-        <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-    <ul id="menu">
+<div class="header">
+    <div id="logo">
+      <a href="/"><img src="/assets/img/chicago-ygl-logo.png" alt="Chicago YGL Logo"></a>
+    </div>
+    <div class="menu">
     {% for item in site.nav %}
       {% if item.href contains 'http' %}
-         <a href="{{ item.href }}"><li>{{ item.title }}</li></a>
+      <div class="menu-item"><a href="{{ item.href }}">{{ item.title }}</a></div>
       {% else %}
-         <a href="{{ item.href | relative_url }}"><li>{{ item.title }}</li></a>
+         <div class="menu-item"><a href="{{ item.href | relative_url }}">{{ item.title }}</a></div>
       {% endif %}
     {% endfor %}
-    </ul>
     
-      </div>
-    </nav>
-  <span><a href="/"><img id="logo" src="/logo.jpg" alt="Chicago YGL Logo"></a></span>
+    </div>
 </div>
-

@@ -6,16 +6,87 @@
 <body>
 
 {% include header.html %}
-<div id="hero-image">
-    <img src="/assets/img/ygl-hero-image.jpg"/>
-</div>
-
-<div id="events-container">
-    
-</div>
+<div id="hero">
+    <div id="hero-content">
+      <h1>Young Government <br/> Leaders Chicago</h1>
+      <h3>Develop your career, have fun, make a difference, and get to know aspiring leaders in Chicago!</h3>
+      <div class="hero-button"><a class="button" href="#">Get Event Updates</a></div>
+    </div>
+</div> 
 
 <div id="content">
-  {{ content }}
+    <h1>
+        What we do
+    </h1>
+  <div id="what-we-do-container">
+  <div class="what-we-do">
+      <i class="material-icons">
+          business_center
+      </i>
+    <h3>Professional Development</h3>
+    <p>
+      We have lots of opportunities to grow your career and skills from seminars to town halls.
+    </p>
+
+  </div>
+
+  <div class="what-we-do">
+      <i class="material-icons">
+          group
+          </i>
+    <h3>Social Events</h3>
+    <p>
+      Get to know other asipiring young professionals in Chicago at our regular happy hours.
+    </p>
+
+
+  </div>
+
+  <div class="what-we-do">
+      <i class="material-icons">
+          public
+          </i>
+    <h3>Service Opportunities</h3>
+    <p>
+      Get involved in the community and use your skills to make a difference.
+    </p>
+
+  </div>
+</div>
+  <div id="about">
+    <h1>About YGL Chicago</h1>
+    <p>Our free membership includes local, state, and federal employees, as well as college students hoping to enter public Service
+    </p>
+    <p>
+        upon graduation. We are interested in furthering our public service careers through professional deveopment activities, 
+        networking opportunities, social events, seminars, and community involvement. 
+
+    </p>
+  </div>
+  <h1>Coming Up Next</h1>
+  <div class="event">
+
+      <div class="event-item">
+      <h4>5:00pm Monday, Month, 2019</h4>
+      <h3>Monthly Happy Hour</h3>
+        <p>Here is a description of the happy hour event. It talks about it to some detail in a way that is nice to read.
+        You definitely want to come.</p>
+       <p><a class="button" href="#">RSVP</a>
+        <a href="#">Details</a></p>
+      </div>
+      <div class="event-item">
+        <img class="event-photo" src="/assets/img/ceres-cafe.jpg"/>
+      </div>
+
+
+    </div>
+  <div class="connect">
+    <h1>Connect</h1>
+    <a href="#"><img class="social-icon" src="/assets/img/flogo-HexRBG-Wht-58.png">Facebook</a>
+    <a href="#"><img class="social-icon" src="/assets/img/Twitter_Logo_WhiteOnImage.png">Twitter</a>
+    <a href="#"><img class="social-icon" src="/assets/img/glyph-logo_May2016.png">Instagram</a>
+    <a href="#"><img class="social-icon" src="/assets/img/mail.png">Email</a>
+  </div>
 </div>
 
 {% include footer.html %}
