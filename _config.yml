@@ -1,13 +1,16 @@
 ###########
 # site.title
 
-title:    'Jekyll Starter Theme V2'
-subtitle: 'Another Static Site Quick Starter Theme'
+title:    'Chicago Young Government Leaders'
+subtitle: ''
 
 
 nav:
-- { title: 'Welcome',              href: '/' }
-- { title: 'Page Two',             href: '/two.html' }
+- { title: 'Home',              href: '/' }
+- { title: 'Events',             href: '/events/' }
+- { title: 'Who We Are',             href: '/whoweare/' }
+- { title: 'Get updates',             href: '/getupdates/' }
+
 
 
 
