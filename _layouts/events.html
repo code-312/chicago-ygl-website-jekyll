@@ -6,7 +6,7 @@
 <body>
 
 {% include header.html %}
-<div id="hero">
+<div id="hero-noimg">
     <div id="hero-content">
       <h1>Events</h1>>
       <div class="hero-button"><a class="button" href="#">Get Event Updates</a></div>
@@ -64,17 +64,10 @@
           
           
         </div>
-        
-</div>
+        {% include connect.html %}
 
-<div class="connect">
-        <h1>Connect</h1>
-        <a href="#"><img class="social-icon" src="/assets/img/flogo-HexRBG-Wht-58.png">Facebook</a>
-        <a href="#"><img class="social-icon" src="/assets/img/Twitter_Logo_WhiteOnImage.png">Twitter</a>
-        <a href="#"><img class="social-icon" src="/assets/img/glyph-logo_May2016.png">Instagram</a>
-        <a href="#"><img class="social-icon" src="/assets/img/mail.png">Email</a>
-      </div>
-    </div>
+</div>
+</div>
     
     {% include footer.html %}
     
