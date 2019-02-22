@@ -88,9 +88,18 @@ a:hover {
 }
 
 #hero {
-  background-image: url(/assets/img/hero-image.jpg);
+  background:
+    linear-gradient(
+      RGBA(50, 52, 39, .45), 
+      RGBA(50, 52, 39, .45)
+    ), url(/assets/img/hero-image.jpg);
   padding-bottom: 4rem;
   min-height: 25rem;
+}
+
+#hero-noimg {
+  background-color: #E51937;
+  min-height: 12.5rem;
 }
 
 #hero-content {
@@ -105,12 +114,10 @@ a:hover {
 #hero-content h1 {
   color: #ffffff;
   font-size: 4rem;
-  text-shadow: 3px 3px 10px #3B6B89;
 }
 
 #hero-content h3 {
   color: #ffffff;
-  text-shadow: 3px 3px 10px #3B6B89;
 }
 
 #hero-content a.button {
@@ -145,6 +152,14 @@ a.button {
 
 #about {
   background-color: #DA253A;
+  background: 
+    linear-gradient(
+      RGBA(229, 25, 55, .45), 
+      RGBA(229, 25, 55, .45)
+    ),
+    url(/assets/img/chicago-theater.jpg);
+  background-position: center center;
+  background-size: cover;
   color: white;
   box-sizing: border-box;
   width: 100%;
@@ -186,9 +201,24 @@ a.button {
   background-color: #DA253A;
   padding-top: 2rem;
 }
+.connect {
+  background: 
+  linear-gradient(
+    RGBA(50, 52, 39, .6), 
+    RGBA(50, 52, 39, .6)
+  ),
+  url(/assets/img/chicago-skyline.jpg);
+  background-position: top -10rem center;
+  background-size: cover;
+}
 
 .connect a {
   color: white;
+}
+
+.connect ul {
+  font-size: 1.5rem;
+  list-style-type: none;
 }
 
 .connect h1 {
@@ -209,4 +239,25 @@ a.button {
   color: white;
   display: flex;
   justify-content: center;
+}
+
+.board-member {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.board-photo {
+  max-width: 40%;
+}
+
+.board-photo img {
+  max-height: 15rem;
+}
+
+.board-bio {
+  max-width: 40%;
+
 }
