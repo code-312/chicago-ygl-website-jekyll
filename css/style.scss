@@ -246,11 +246,14 @@ a.button {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  margin-left: 10%;
+  margin-bottom: 5em;
 }
 
 .board-photo {
   max-width: 40%;
+  margin-right: 10%;
 }
 
 .board-photo img {
@@ -259,5 +262,8 @@ a.button {
 
 .board-bio {
   max-width: 40%;
+}
 
+.board-bio .fa-envelope {
+  font-size: 2em;
 }
