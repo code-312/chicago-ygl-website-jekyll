@@ -27,6 +27,27 @@ a:hover {
   text-decoration: underline;
 }
 
+h1 {
+  font-family: 'Roboto';
+  font-size: 36px;
+}
+
+h2 {
+  font-family: 'Roboto';
+  font-size: 32px;
+}
+
+h3 {
+  font-family: 'Roboto';
+  font-size: 24px;
+}
+
+h4 {
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: normal;
+}
+
 
 .header {
   display: flex;
@@ -53,6 +74,13 @@ a:hover {
   max-width: 50%;
 }
 
+@media (max-width: 600px) {
+  #logo {
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
 #content {
   position: relative;
   width: 75%;
@@ -63,7 +91,15 @@ a:hover {
   background-color: #ffffff;
   padding-top: 2rem;
   border: 1px solid #3B6B89;
+  font-family: 'Roboto';
+  font-size: 15px;
 }
+
+@media (max-width: 600px) {
+  #content {
+  width: 100%;
+  }
+ }
 
 #content h1 {
   color: #DA253A;
@@ -97,9 +133,51 @@ a:hover {
   min-height: 25rem;
 }
 
+@media (max-width: 600px) {
+  #hero {
+    background-position: top center;
+  }
+}
+
+#hero-events {
+  background:
+    linear-gradient(
+      RGBA(50, 52, 39, .45), 
+      RGBA(50, 52, 39, .45)
+    ), url(/assets/img/pingpong-hero.jpg);
+  background-position: top -15rem center;
+  background-size: cover;
+  padding-bottom: 4rem;
+  min-height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  #hero-events {
+    background-position: top center;
+  }
+ }
+
+#hero-events h1 {
+  font-size: 67px;
+  color: white;
+}
+
 #hero-noimg {
   background-color: #E51937;
   min-height: 12.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  #hero-noimg h1 {
+    font-size: 36px;
+    color: white;
+  }
 }
 
 #hero-content {
@@ -111,9 +189,21 @@ a:hover {
   width: 100%;
 }
 
+@media (max-width: 600px) {
+  #hero-content {
+    padding: 1em;
+  }
+}
+
 #hero-content h1 {
   color: #ffffff;
-  font-size: 4rem;
+  font-size: 67px;
+}
+
+@media (max-width: 600px) {
+  #hero-content h1 {
+    font-size: 36px;
+  }
 }
 
 #hero-content h3 {
@@ -187,6 +277,12 @@ a.button {
   // margin-left: auto;
 }
 
+@media (max-width: 600px) {
+  .event-item {
+  max-width: 100%;
+  }
+ }
+
 .event-item img {
   max-width: 80%;
 }
@@ -259,10 +355,20 @@ a.button {
 .board-photo img {
   max-height: 15rem;
 }
+@media (max-width: 600px) {
+  .board-photo {
+  max-width: 100%;
+  }
+ }
 
 .board-bio {
   max-width: 40%;
 }
+@media (max-width: 600px) {
+  .board-bio {
+    max-width: 100%;
+  }
+ }
 
 .board-bio .fa-envelope {
   font-size: 2em;
