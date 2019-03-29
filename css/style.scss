@@ -74,6 +74,13 @@ h4 {
   max-width: 50%;
 }
 
+@media (max-width: 600px) {
+  #logo {
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
 #content {
   position: relative;
   width: 75%;
@@ -87,6 +94,12 @@ h4 {
   font-family: 'Roboto';
   font-size: 15px;
 }
+
+@media (max-width: 600px) {
+  #content {
+  width: 100%;
+  }
+ }
 
 #content h1 {
   color: #DA253A;
@@ -117,7 +130,13 @@ h4 {
       RGBA(50, 52, 39, .45)
     ), url(/assets/img/hero-image.jpg);
   padding-bottom: 4rem;
-  min-height: 30rem;
+  min-height: 25rem;
+}
+
+@media (max-width: 600px) {
+  #hero {
+    background-position: top center;
+  }
 }
 
 #hero-events {
@@ -135,6 +154,12 @@ h4 {
   align-items: center;
 }
 
+@media (max-width: 600px) {
+  #hero-events {
+    background-position: top center;
+  }
+ }
+
 #hero-events h1 {
   font-size: 67px;
   color: white;
@@ -143,6 +168,16 @@ h4 {
 #hero-noimg {
   background-color: #E51937;
   min-height: 12.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  #hero-noimg h1 {
+    font-size: 36px;
+    color: white;
+  }
 }
 
 #hero-content {
@@ -154,9 +189,21 @@ h4 {
   width: 100%;
 }
 
+@media (max-width: 600px) {
+  #hero-content {
+    padding: 1em;
+  }
+}
+
 #hero-content h1 {
   color: #ffffff;
   font-size: 67px;
+}
+
+@media (max-width: 600px) {
+  #hero-content h1 {
+    font-size: 36px;
+  }
 }
 
 #hero-content h3 {
@@ -230,6 +277,12 @@ a.button {
   // margin-left: auto;
 }
 
+@media (max-width: 600px) {
+  .event-item {
+  max-width: 100%;
+  }
+ }
+
 .event-item img {
   max-width: 80%;
 }
@@ -302,10 +355,20 @@ a.button {
 .board-photo img {
   max-height: 15rem;
 }
+@media (max-width: 600px) {
+  .board-photo {
+  max-width: 100%;
+  }
+ }
 
 .board-bio {
   max-width: 40%;
 }
+@media (max-width: 600px) {
+  .board-bio {
+    max-width: 100%;
+  }
+ }
 
 .board-bio .fa-envelope {
   font-size: 2em;
