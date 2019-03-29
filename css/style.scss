@@ -27,6 +27,27 @@ a:hover {
   text-decoration: underline;
 }
 
+h1 {
+  font-family: 'Roboto';
+  font-size: 36px;
+}
+
+h2 {
+  font-family: 'Roboto';
+  font-size: 32px;
+}
+
+h3 {
+  font-family: 'Roboto';
+  font-size: 24px;
+}
+
+h4 {
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: normal;
+}
+
 
 .header {
   display: flex;
@@ -63,6 +84,8 @@ a:hover {
   background-color: #ffffff;
   padding-top: 2rem;
   border: 1px solid #3B6B89;
+  font-family: 'Roboto';
+  font-size: 15px;
 }
 
 #content h1 {
@@ -94,7 +117,27 @@ a:hover {
       RGBA(50, 52, 39, .45)
     ), url(/assets/img/hero-image.jpg);
   padding-bottom: 4rem;
-  min-height: 25rem;
+  min-height: 30rem;
+}
+
+#hero-events {
+  background:
+    linear-gradient(
+      RGBA(50, 52, 39, .45), 
+      RGBA(50, 52, 39, .45)
+    ), url(/assets/img/pingpong-hero.jpg);
+  background-position: top -15rem center;
+  background-size: cover;
+  padding-bottom: 4rem;
+  min-height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-events h1 {
+  font-size: 67px;
+  color: white;
 }
 
 #hero-noimg {
@@ -113,7 +156,7 @@ a:hover {
 
 #hero-content h1 {
   color: #ffffff;
-  font-size: 4rem;
+  font-size: 67px;
 }
 
 #hero-content h3 {
