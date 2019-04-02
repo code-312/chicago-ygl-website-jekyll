@@ -25,6 +25,12 @@ module Jekyll
             @venue_data = https.get(venue_uri)
             @venue_info = JSON.parse(@venue_data.body)
 
+            # if @event_info["events"][0]["logo"]["url"]
+            #   eventImage = @event_info["events"][0]["logo"]["url"]
+            # else
+              eventImage = '/assets/img/chicago-ygl-logo.png'
+            # end
+
             return "
             <div class='event'>
                 <div class='event-item'>
@@ -37,7 +43,7 @@ module Jekyll
                   <a href='#{@event_info["events"][0]["url"]}'>Details</a></p>
                 </div>
                 <div class='event-item'>
-                  <img class='event-photo' src='#{@event_info["events"][0]["logo"]["url"]}'/>
+                  <img class='event-photo' src='#{eventImage}'/>
                 </div>
               </div>"
             
