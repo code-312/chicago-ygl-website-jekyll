@@ -180,6 +180,10 @@ h4 {
   margin: auto;
 }
 
+#hero-noimg h1 {
+  color: white;
+}
+
 @media (max-width: 600px) {
   #hero-noimg h1 {
     font-size: 36px;
@@ -194,6 +198,10 @@ h4 {
   z-index: 100;
   top: 10rem;
   width: 100%;
+}
+
+#hero-content h1 {
+  color: white;
 }
 
 @media (max-width: 600px) {
@@ -381,7 +389,7 @@ a.button {
 }
 
 .board-photo img {
-  max-height: 15rem;
+  max-width: 12rem;
 }
 @media (max-width: 600px) {
   .board-photo {
