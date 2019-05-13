@@ -9,7 +9,7 @@ module Jekyll
         def render(context)
             userId = "188789739786"
             ygl_eb_token = ENV['ygl_eb_token']
-            uri = URI.parse("https://www.eventbriteapi.com/v3/organizations/188789739786/events/?token=#{ygl_eb_token}&order_by=start_desc&page_size=1&status=live")
+            uri = URI.parse("https://www.eventbriteapi.com/v3/organizations/188789739786/events/?token=#{ygl_eb_token}&order_by=start_asc&page_size=1&status=live")
             
             https = Net::HTTP.new(uri.host, uri.port)
             https.use_ssl = true
