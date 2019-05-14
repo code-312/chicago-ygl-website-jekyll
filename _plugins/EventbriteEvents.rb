@@ -40,8 +40,8 @@ module Jekyll
                   eventImage = '/assets/img/chicago-ygl-logo.png'
                 end
 
-                if !@event_info["events"][0]["description"].nil?
-                  eventDescription = "<p> #{@event_info["events"][0]["description"]["text"]} </p>"
+                if !event["description"].nil?
+                  eventDescription = "<p> #{event["description"]["text"]} </p>"
                 else
                   eventDescription = ""
                 end
